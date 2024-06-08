@@ -51,10 +51,7 @@ const About = () => {
             </div>
             <p>
                     I'm a <b>Software Engineering Undergradute</b> at the University of Kelaniya. 
-                    I'm an enthusiastic and driven Software Engineering student seeking a challenging internship opportunity to apply 
-                    and expand my technical skills. 
-                    With a strong academic foundation in software engineering and hands-on experience in various programming languages,
-                    I am eager to contribute to innovative projects and learn from experienced professionals in the industry. I am a quick learner who is always ready to face challenges.
+                    Test
                     
             </p>
 

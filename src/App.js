@@ -1,24 +1,38 @@
 import React from 'react';
-import NavBar from './components/nav/NavBar';
-import About from './components/about/About';
-import Contact from './components/contact/Contact';
-import Experience from './components/experience/Experience';
-import Header from './components/header/Header';
-import Projects from './components/projects/Projects';
-import Footer from './components/footer/Footer';
 import './App.css';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+
+import Footer from './components/footer/Footer';
+import HomePage from './pages/HomePage'
+import ProjectHomePage from './pages/ProjectHomePage'
+import ContactPage from './pages/ContactPage'
+
 
 function App() {
   return (
-    <>
-      <Header />
-      <NavBar />
-      <About />
-      <Experience />
-      <Projects />
-      <Contact/>
+    <Router>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/Home">Home</Link>
+            </li>
+            <li>
+              <Link to="/Projects">Projects</Link>
+            </li>
+            <li>
+              <Link to="/Contact">Contact</Link>
+            </li>
+          </ul>
+        </nav>
+        <Routes>
+          <Route path="/Home" element={<HomePage />} />
+          <Route path="/Projects" element={<ProjectHomePage />} />
+          <Route path="/Contact" element={<ContactPage />} />
+        </Routes>
+      </div>
       <Footer />
-    </>
+    </Router>
   );
 }
 
