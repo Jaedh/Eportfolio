@@ -1,6 +1,7 @@
 import React from 'react'
 import './Contact.css'
 import {MdOutlineEmail} from 'react-icons/md'
+import {BsLinkedin} from 'react-icons/bs'
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
@@ -29,6 +30,13 @@ const Contacts = () => {
             <h4>Email</h4>
             <h5>jaedh.rameezdeen.jr@gmail.com</h5>
             <a href="mailto:jaedh.rameezdeen.jr@gmail.com">Send a message</a>
+          </article>
+
+          <article className='contact__option'>
+            <BsLinkedin className='contact__option-icon'/>
+            <h4>LinkedIn</h4>
+            <h5>Jaedh Rameezdeen</h5>
+            <a href="https://www.linkedin.com/in/jaedh-rameezdeen-568bbb217/">Connect</a>
           </article>
         </div>
 
