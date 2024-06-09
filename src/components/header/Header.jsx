@@ -5,9 +5,11 @@ import me from '../../assets/me_1.JPG'
 import HeaderSocials from './HeaderSocials'
 
 const Header = () => {
-  return (
-    
-    
+  const scrollToBottom = () => {
+    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+  };
+
+  return (    
       <header id='home'>
 
         <div className="container header__container">
@@ -23,7 +25,7 @@ const Header = () => {
             <img src={me} alt='me'/>
           </div>
 
-          <a href="#contacts" className='scroll__down'>Scroll Down</a>
+          <a href="#" className='scroll__down' onClick={scrollToBottom}>Scroll Down</a>
         </div>
       </header>
 
